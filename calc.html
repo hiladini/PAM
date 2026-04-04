@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>calculadoraaaaaaaa</title>
+    <style>
+        .calculadora {
+            width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: sans-serif;
+        }
+        #visor {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 10px;
+            text-align: right;
+            font-size: 24px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .botoes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+        button {
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover { background-color: #ddd; }
+        .operador { background-color: #fe5ab7; color: white; }
+        .igual { grid-column: span 2; background-color: #27ae60; color: white; }
+  .calculadora {
+        width: 250px;
+        background-color: #e996c1;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    #visor {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 15px;
+        text-align: right;
+        font-size: 24px;
+        box-sizing: border-box;
+        border: none;
+        padding: 10px;
+    }
+
+    .botoes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 8px;
+    }
+
+    button {
+        height: 50px;
+        width: 100%;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .zero {
+        grid-column: span 2;
+    }
+
+    .operador { background-color: #f13f8f; color: white; }
+</style>
+
+<div class="calculadora">
+    <input type="text" id="visor" disabled>
+    <div class="botoes">
+
+        <button onclick="limpar()">C</button>
+        <button onclick="digitar('/')" class="operador">/</button>
+        <button onclick="digitar('*')" class="operador">*</button>
+        <button onclick="digitar('-')" class="operador">-</button>
+        
+        <button onclick="digitar('7')">7</button>
+        <button onclick="digitar('8')">8</button>
+        <button onclick="digitar('9')">9</button>
+        <button onclick="digitar('+')" class="operador">+</button>
+        
+        <button onclick="digitar('4')">4</button>
+        <button onclick="digitar('5')">5</button>
+        <button onclick="digitar('6')">6</button>
+        <button onclick="calcular()" class="operador">=</button>
+        
+        <button onclick="digitar('1')">1</button>
+        <button onclick="digitar('2')">2</button>
+        <button onclick="digitar('3')">3</button>
+        <button onclick="digitar('0')" class="zero">0</button>
+    </div>
+</div>
