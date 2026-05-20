@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #f1f1f1;
+  }
+  
+  button{
+    cursor: pointer;
+  }
+  
+  .container{
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: white;
+    padding: 20px;
+  }
+  
+  .header{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .header span{
+    font-weight: 900;
+    font-size: 20px;
+    word-break: break-all;
+  }
+  
+  #new{
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #f19cd5;
+  }
+  
+  .divTable{
+    width: auto;
+    overflow: auto;
+  }
+  
+  table{
+    width: 100%;
+    border-spacing: 10px;
+    word-break: break-all;
+    border-collapse: collapse;
+  }
+  
+  thead{
+    background-color: whitesmoke;
+  }
+  
+  tr{
+    border-bottom: 1px solid rgb(238, 235, 235);
+  }
+  
+  th,
+  td{
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th.acao,
+  td.acao{
+    text-align: center;
+  }
+  
+  td button{
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+  td button i{
+    font-size: 20px;
+  }
+  
+  .modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(178, 97, 245, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .modal-container.active{
+    display: flex;
+  }
+  
+  .modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  .modal form{
+    width: 100%;
+  }
+  
+  .modal label{
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .modal input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .modal button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #f19cd5;
+    color: white;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 700px){
+  
+    .modal{
+      width: 90%;
+    }
+  
+    .header{
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
